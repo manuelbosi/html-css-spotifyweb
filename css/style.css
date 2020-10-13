@@ -67,6 +67,7 @@ nav img {
 .playlist {
   margin-top: 20px;
   padding-left: 15px;
+  overflow-y: auto;
 }
 .playlist h4 {
   color: white;
