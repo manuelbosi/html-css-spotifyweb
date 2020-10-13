@@ -15,7 +15,9 @@ html, body {
 .container {
   height: calc(100% - 100px);
 }
-
+.active {
+  color: white;
+}
 /* REGOLE GENERALI PAGINA */
 .content-left, .content-right {
   float: left;
@@ -24,10 +26,113 @@ html, body {
 
 /* CONTENT LEFT */
 .content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
   height: 100%;
   width: 200px;
-  background-color: lightgrey;
+  background-color: black;
 }
+
+/* CONTENT LEFT - TOP - LOGO - NAV */
+.content-left .logo {
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+.content-left .logo img {
+  padding: 5px;
+  max-width: 90%;
+}
+.content-left nav li {
+  padding-top: 5px;
+  padding-left: 15px;
+  margin: 10px 0;
+  border-left: 5px solid lime;
+}
+nav li a {
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+}
+nav img {
+  max-width: 15%;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* CONTENT LEFT - TOP - PLAYLIST */
+.playlist {
+  margin-top: 20px;
+  padding-left: 15px;
+}
+.playlist h4 {
+  color: white;
+}
+.playlist .create-playlist a {
+  margin: 10px 0;
+  display: inline-block;
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+}
+.playlist .create-playlist .btn {
+  display: inline-block;
+  width:30px;
+  height: 0;
+  padding-bottom:30px;
+  margin-right: 5px;
+  text-align: center;
+  background-color: grey;
+  vertical-align: middle;
+}
+.playlist .create-playlist .btn span {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+.playlist .create-playlist  ul {
+  margin: 5px 0;
+  overflow: auto;
+}
+
+
+
+
+
+/* CONTENT LEFT - BOTTOM */
+.bottom {
+  padding: 0 15px;
+}
+.bottom img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.bottom span {
+  color: white;
+}
+.bottom hr {
+  margin: 10px 0;
+}
+.download-app img {
+  width: 10%;
+}
+.download-app span {
+  font-size: 12px;
+  color: grey;
+}
+.account img {
+  width: 15%;
+  padding: 5px;
+  background-color: grey;
+  border-radius: 50%;
+}
+.account span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
 
 
 
@@ -46,7 +151,9 @@ html, body {
   top: 0;
   left: 200px;
   height: 100px;
-  width: 100%;
+  width: calc(100% - 200px);
+  padding: 2% 1%;
+  text-align: right;
   background-color: grey;
 }
 
