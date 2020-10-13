@@ -1,0 +1,63 @@
+/* REGOLE GENERALI */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+.container::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+.container {
+  height: calc(100% - 100px);
+}
+
+/* REGOLE GENERALI PAGINA */
+.content-left, .content-right {
+  float: left;
+}
+
+
+/* CONTENT LEFT */
+.content-left {
+  height: 100%;
+  width: 200px;
+  background-color: lightgrey;
+}
+
+
+
+/* CONTENT RIGHT */
+.content-right {
+  height: 100%;
+  width: calc(100% - 200px);
+  background-color: lightblue;
+  padding-top: 105px;
+  padding-left: 1%;
+  padding-right: 1%;
+  overflow-y: auto;
+}
+#upgrade-bar {
+  position: fixed;
+  top: 0;
+  left: 200px;
+  height: 100px;
+  width: 100%;
+  background-color: grey;
+}
+
+
+/* MUSIC PLAYER */
+#music-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background-color: grey;
+  z-index: 9999;
+}
