@@ -329,7 +329,7 @@ nav li img {
   justify-content: space-between;
   align-items: center;
   /* debug */
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 #music-player .left {
   width: 200px;
