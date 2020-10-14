@@ -451,6 +451,8 @@ nav li img {
 #music-player .settings .time {
   width: 60%;
 }
+
+/* GESTIONE RESPONSIVE PLAYER */
 @media all and (max-width:852px) {
   #music-player .left {
     width: 20%;
@@ -462,7 +464,6 @@ nav li img {
     width: 50%;
   }
   #music-player .settings {
-    margin: 0 auto;
     width: 30%;
   }
   #music-player .settings .fas{
