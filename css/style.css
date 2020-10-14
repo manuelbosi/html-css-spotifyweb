@@ -74,6 +74,55 @@ nav li img {
   max-width: 15%;
   margin-right: 8px;
 }
+@media all and (max-width:650px) {
+  .content-left {
+    width: 50px;
+  }
+  .content-left .top {
+    text-align: center;
+  }
+  .content-left .logo {
+    display: none;
+  }
+  .content-left #logo-mobile {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .content-left #logo-mobile img {
+    display: block;
+    max-width: 100%;
+  }
+  .content-left nav li {
+    height: auto;
+    padding-left: 0;
+    padding-top: 0;
+    list-style: none;
+  }
+  li.active {
+    border: none;
+  }
+  nav li a {
+    display: none;
+  }
+  nav li {
+  margin: 10px 0;
+  }
+  nav li img {
+    max-width: 80%;
+    margin-right: 0;
+  }
+
+  .playlist {
+    display: none;
+  }
+  .bottom span {
+    display: none;
+  }
+  .bottom hr {
+    display: none;
+  }
+}
 
 /* CONTENT LEFT - TOP - PLAYLIST */
 .playlist {
@@ -143,7 +192,7 @@ nav li img {
   margin: 10px 0;
 }
 .download-app img {
-  width: 10%;
+  max-width: 10%;
 }
 .download-app span {
   font-size: 12px;
@@ -159,7 +208,23 @@ nav li img {
   font-weight: bold;
   font-size: 15px;
 }
-
+@media all and (max-width:650px) {
+  .bottom {
+    padding: 0;
+  }
+  .account, .download-app {
+    margin: 10px 0;
+    text-align: center;
+  }
+  .download-app img {
+    max-width: 50%;
+    margin-right: 0;
+  }
+  .account img {
+    max-width: 80%;
+    margin-right: 0;
+  }
+}
 
 /* CONTENT RIGHT */
 .content-right {
@@ -170,6 +235,12 @@ nav li img {
   padding-right: 1%;
   overflow-y: auto;
   color: #ffff;
+}
+@media all and (max-width:650px) {
+  .content-right {
+    height: 100%;
+    width: calc(100% - 50px);
+  }
 }
 #upgrade-bar {
   position: fixed;
@@ -192,7 +263,12 @@ nav li img {
   font-weight: bold;
   font-size: 12px;
 }
-
+@media all and (max-width:650px) {
+  #upgrade-bar {
+    left: 50px;
+    width: calc(100% - 50px);
+  }
+}
 /* SONGS MENU */
 .songs-menu {
   padding-top: 120px;
@@ -241,8 +317,9 @@ nav li img {
   text-align: center;
 }
 .song {
-  margin: 5px;
-  flex-basis: calc((100% / 6) - 10px);
+  flex-basis: calc(100% / 6);
+
+  /* NON CAPISCO COSA CAMBIA CON SHRINK ???? */
   flex-shrink: 1;
   cursor: pointer;
   /* debug */
@@ -264,7 +341,6 @@ nav li img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
-
 }
 
 .song .play i {
@@ -369,7 +445,6 @@ nav li img {
   width: 500px;
   flex-direction: column;
   justify-content: space-evenly;
-  flex-shrink: 1;
 }
 .player .command,
 .player .time {
