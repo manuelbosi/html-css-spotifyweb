@@ -97,9 +97,9 @@ nav img {
 }
 .playlist ul {
   margin: 10px 0;
-  max-height: 200px;
-  overflow-y: auto;
+  max-height: 210px;
 }
+
 .playlist ul li {
   margin: 10px 0;
 }
