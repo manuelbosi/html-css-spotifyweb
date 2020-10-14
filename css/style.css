@@ -157,12 +157,13 @@ nav li img {
   height: 25vh;
 }
 
-/* SCROLLBAR */
+/* SCROLLBAR PLAYLIST */
 @media all and (max-height:700px) {
    .playlist ul {
     overflow: auto;
   }
 }
+/* SCROLLBAR PLAYLIST */
 
 .playlist ul li {
   margin: 10px 0;
