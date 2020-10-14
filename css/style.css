@@ -9,7 +9,7 @@ html, body {
   font-family: 'Montserrat', sans-serif;
 
   /* ????? */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .container::after {
   display: table;
@@ -154,16 +154,15 @@ nav li img {
 }
 .playlist ul {
   margin: 10px 0;
-  max-height: 210px;
+  height: 25vh;
 }
 
-/* TEST SCROLLBAR*/
-@media all and (min-height:210px) {
+/* SCROLLBAR */
+@media all and (max-height:700px) {
    .playlist ul {
     overflow: auto;
   }
 }
-/* TEST SCROLLBAR*/
 
 .playlist ul li {
   margin: 10px 0;
@@ -286,7 +285,6 @@ nav li img {
   /* DA RIVEDERE */
   border-left: none;
   border-bottom: 2px solid #acfe2e;
-  border-width: 40%;
 }
 .songs-menu ul li a {
   color: grey;
