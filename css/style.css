@@ -7,6 +7,9 @@
 html, body {
   height: 100%;
   font-family: 'Montserrat', sans-serif;
+
+  /* ????? */
+  overflow: hidden;
 }
 .container::after {
   display: table;
@@ -100,6 +103,11 @@ nav li img {
 .playlist ul {
   margin: 10px 0;
   max-height: 210px;
+}
+@media all and (min-height:210px) {
+   .playlist ul {
+    overflow: auto;
+  }
 }
 .playlist ul li {
   margin: 10px 0;
