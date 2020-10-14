@@ -149,8 +149,6 @@ nav img {
   background-color: #141922;
   padding-left: 1%;
   padding-right: 1%;
-  padding-top: 120px;
-  padding-bottom: 10px;
   overflow-y: auto;
   color: #ffff;
 }
@@ -176,6 +174,9 @@ nav img {
 }
 
 /* SONGS MENU */
+.content-right .songs-menu {
+  padding-top: 120px;
+}
 .content-right .songs-menu ul {
   text-align: center;
   margin-bottom: 50px;
@@ -207,12 +208,15 @@ nav img {
 }
 .song {
   margin: 5px;
+  text-align: center;
   /* debug */
   min-width: 200px;
   min-height: 200px;
   background-color: red;
 }
-
+.song img {
+  max-width: 80%;
+}
 /* MUSIC PLAYER */
 #music-player {
   position: fixed;
