@@ -80,7 +80,7 @@ nav li img {
   margin-top: 20px;
   padding-left: 15px;
 }
-.playlist h4 {
+.playlist h5 {
   color: white;
 }
 .playlist .create-playlist a {
@@ -89,6 +89,9 @@ nav li img {
   text-decoration: none;
   color: grey;
   font-weight: bold;
+}
+.playlist .create-playlist a:hover {
+  color: white;
 }
 .playlist .create-playlist .btn {
   display: inline-block;
@@ -104,13 +107,20 @@ nav li img {
   margin: 10px 0;
   max-height: 210px;
 }
+
+/* TEST SCROLLBAR*/
 @media all and (min-height:210px) {
    .playlist ul {
     overflow: auto;
   }
 }
+/* TEST SCROLLBAR*/
+
 .playlist ul li {
   margin: 10px 0;
+}
+.playlist ul li:hover a {
+  color: white;
 }
 .playlist ul li a {
   text-decoration: none;
@@ -364,7 +374,6 @@ nav li img {
 .player .command,
 .player .time {
   text-align: center;
-  background-color: red;
 }
 .command .fas {
   color: white;
@@ -426,11 +435,40 @@ nav li img {
 }
 .time .eta-right {
   margin-left: 10px;
-
 }
+
 /* SETTINGS */
 #music-player .settings {
-  width: 300px;
-
-  flex-shrink: 2;
+  max-width: 300px;
+  justify-content: space-around;
+}
+#music-player .settings .fas {
+  color: white;
+}
+#music-player .settings .fas:hover {
+  cursor: pointer;
+}
+#music-player .settings .time {
+  width: 60%;
+}
+@media all and (max-width:852px) {
+  #music-player .left {
+    width: 20%;
+  }
+  .time .line-bg {
+    width: 200px;
+  }
+  #music-player .player {
+    width: 50%;
+  }
+  #music-player .settings {
+    margin: 0 auto;
+    width: 30%;
+  }
+  #music-player .settings .fas{
+    margin-right: 3px;
+  }
+  #music-player .settings .time {
+    width: 120px;
+  }
 }
