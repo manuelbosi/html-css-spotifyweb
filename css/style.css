@@ -257,13 +257,9 @@ nav li img {
 }
 #upgrade-bar a {
   display: inline-block;
-  padding: 10px 25px;
+  margin-right: 20px;
   border: 1px solid white;
-  border-radius: 50px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 15px;
+  height: 50%;
   transition: transform 1s;
 }
 #upgrade-bar a:hover {
@@ -357,7 +353,6 @@ nav li img {
   background-color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
-
 .song .play i {
   position: absolute;
   top: 50%;
