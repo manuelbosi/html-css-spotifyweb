@@ -299,7 +299,7 @@ nav li img {
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
-  width: 60%;
+  width: 40%;
   border-bottom: 2px solid #acfe2e;
 }
 .songs-menu ul li a {
