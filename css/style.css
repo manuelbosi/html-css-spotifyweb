@@ -9,7 +9,7 @@ html, body {
   font-family: 'Montserrat', sans-serif;
 
   /* ????? */
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .container::after {
   display: table;
@@ -158,9 +158,10 @@ nav li img {
 }
 
 /* SCROLLBAR PLAYLIST */
-@media all and (max-height:700px) {
+@media all and (max-height:680px) {
    .playlist ul {
     overflow: auto;
+    height: 20vh;
   }
 }
 /* SCROLLBAR PLAYLIST */
@@ -255,13 +256,18 @@ nav li img {
   z-index: 999;
 }
 #upgrade-bar a {
+  display: inline-block;
   padding: 10px 25px;
   border: 1px solid white;
   border-radius: 50px;
   text-decoration: none;
   color: white;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 15px;
+  transition: transform 1s;
+}
+#upgrade-bar a:hover {
+  transform: scale(1.1);
 }
 @media all and (max-width:650px) {
   #upgrade-bar {
@@ -460,6 +466,14 @@ nav li img {
   padding: 5px;
   border-radius: 50%;
 }
+@media all and (max-width:650px) {
+  .command [class="fas fa-play"] {
+    font-size: 15px;
+  }
+  .command .fas {
+    font-size: 10px;
+  }
+}
 .time {
   display: flex;
   flex-direction: row;
@@ -521,6 +535,11 @@ nav li img {
 }
 #music-player .settings .fas:hover {
   cursor: pointer;
+}
+@media all and (max-width:650px) {
+  #music-player .settings .fas {
+    font-size: 10px;
+  }
 }
 #music-player .settings .time {
   width: 60%;
