@@ -300,7 +300,7 @@ nav li img {
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
-  width: 60%;  /* or 100px */
+  width: 60%;
   border-bottom: 2px solid #acfe2e;
 }
 .songs-menu ul li a {
@@ -373,7 +373,12 @@ nav li img {
 }
 .song .info h5 {
   letter-spacing: 1px;
-  font-size: 16px;
+  font-size: 14px;
+}
+.song .info span {
+  letter-spacing: 1px;
+  font-size: 12px;
+  color: grey;
 }
 .song .info {
   margin-top: 10px;
