@@ -247,24 +247,22 @@ nav li img {
   position: fixed;
   top: 0;
   left: 200px;
-
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: calc(100% - 200px);
   height: 100px;
-  padding-right: 30px;
+  padding-right: 40px;
   text-align: right;
   background-color: rgba(0,0,0, 0.7);
   z-index: 999;
 }
 #upgrade-bar a {
-  display: flex;
-  border: 1px solid white;
   padding: 10px 25px;
   border-radius: 60px;
   text-decoration: none;
   color: white;
+  border: 1px solid white;
   transition: transform 1s;
 }
 #upgrade-bar a:hover {
@@ -333,17 +331,16 @@ nav li img {
   text-align: center;
 }
 .song {
-  display: flex;
   margin: 10px 5px;
   flex-basis: calc((100% / 6) - 10px);
-  flex-direction: column;
   cursor: pointer;
 }
 .song img {
-  max-width: 100%;
-  display: block;
+  max-width: 80%;
 }
 .song .img {
+  display: flex;
+  justify-content: center;
   position: relative;
 }
 .song .play {
@@ -353,7 +350,7 @@ nav li img {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.3);
-  width: 100%;
+  width: 80%;
   height: 100%;
   cursor: pointer;
 }
