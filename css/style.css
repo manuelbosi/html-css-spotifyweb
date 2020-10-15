@@ -275,6 +275,8 @@ nav li img {
     width: calc(100% - 50px);
   }
 }
+
+
 /* SONGS MENU */
 .songs-menu {
   padding-top: 120px;
@@ -287,10 +289,18 @@ nav li img {
   display: inline-block;
   margin: 0 10px;
   padding: 5px;
+  position: relative;
 }
 .songs-menu ul li.active {
-  /* DA RIVEDERE */
   border-left: none;
+}
+.songs-menu ul li.active::after {
+  content : "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 60%;  /* or 100px */
   border-bottom: 2px solid #acfe2e;
 }
 .songs-menu ul li a {
