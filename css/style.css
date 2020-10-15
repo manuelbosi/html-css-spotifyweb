@@ -113,7 +113,7 @@ nav li img {
     margin-right: 0;
   }
 
-  .playlist {
+  #playlist {
     display: none;
   }
   .bottom span {
@@ -125,54 +125,54 @@ nav li img {
 }
 
 /* CONTENT LEFT - TOP - PLAYLIST */
-.playlist {
+#playlist {
   margin-top: 20px;
   padding-left: 15px;
 }
-.playlist h5 {
+#playlist h5 {
   color: white;
 }
-.playlist .create-playlist a {
+#playlist #create-playlist a {
   margin: 10px 0;
   display: inline-block;
   text-decoration: none;
   color: grey;
   font-weight: bold;
 }
-.playlist .create-playlist a:hover {
+#playlist #create-playlist a:hover {
   color: white;
 }
-.playlist .create-playlist .btn {
+#playlist #create-playlist .btn {
   display: inline-block;
   margin-right: 5px;
   text-align: center;
   vertical-align: middle;
   font-size: 35px;
 }
-.playlist .create-playlist .btn a {
+#playlist #create-playlist .btn a {
   font-size: 18px;
 }
-.playlist ul {
+#playlist ul {
   margin: 10px 0;
   height: 25vh;
 }
 
 /* SCROLLBAR PLAYLIST */
 @media all and (max-height:680px) {
-   .playlist ul {
+   #playlist ul {
     overflow: auto;
     height: 20vh;
   }
 }
 /* SCROLLBAR PLAYLIST */
 
-.playlist ul li {
+#playlist ul li {
   margin: 10px 0;
 }
-.playlist ul li:hover a {
+#playlist ul li:hover a {
   color: white;
 }
-.playlist ul li a {
+#playlist ul li a {
   text-decoration: none;
   color: grey;
   font-size: 12px;
@@ -264,6 +264,7 @@ nav li img {
   color: white;
   border: 1px solid white;
   transition: transform 1s;
+  font-weight: bold;
 }
 #upgrade-bar a:hover {
   transform: scale(1.2);
@@ -277,23 +278,23 @@ nav li img {
 
 
 /* SONGS MENU */
-.songs-menu {
+#songs-menu {
   padding-top: 120px;
 }
-.songs-menu ul {
+#songs-menu ul {
   text-align: center;
   margin-bottom: 50px;
 }
-.songs-menu ul li{
+#songs-menu ul li{
   display: inline-block;
   margin: 0 10px;
   padding: 5px;
   position: relative;
 }
-.songs-menu ul li.active {
+#songs-menu ul li.active {
   border-left: none;
 }
-.songs-menu ul li.active::after {
+#songs-menu ul li.active::after {
   content : "";
   position: absolute;
   left: 50%;
@@ -302,13 +303,13 @@ nav li img {
   width: 40%;
   border-bottom: 2px solid #acfe2e;
 }
-.songs-menu ul li a {
+#songs-menu ul li a {
   color: grey;
   text-decoration: none;
   font-weight: bold;
   font-size: 13px;
 }
-.songs-menu ul li:hover a {
+#songs-menu ul li:hover a {
   color: white;
 }
 
@@ -358,12 +359,11 @@ nav li img {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 10px;
   transform: translate(-50%, -50%);
+  padding: 10px;
   font-size: 40px;
   border: 8px solid white;
   border-radius: 50%;
-
 }
 .song .img:hover .play {
   display: block;
