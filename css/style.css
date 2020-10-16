@@ -7,8 +7,6 @@
 html, body {
   height: 100%;
   font-family: 'Montserrat', sans-serif;
-
-  /* ????? */
   overflow: hidden;
 }
 .container::after {
@@ -504,8 +502,9 @@ nav li img {
   position: absolute;
   height: 15px;
   width: 15px;
-  top: -5px;
+  top: 50%;
   left: 90px;
+  transform: translateY(-50%);
   background-color: white;
   border-radius: 50%;
 }
