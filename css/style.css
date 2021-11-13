@@ -292,7 +292,7 @@ nav li img {
 #songs-menu ul li.active {
   border-left: none;
 }
-#songs-menu ul li.active::after {
+#songs-menu ul li.active::after, #songs-menu ul li:hover::after {
   content : "";
   position: absolute;
   left: 50%;
